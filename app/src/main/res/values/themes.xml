@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.CastBridge" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/castbridge_primary</item>
+        <item name="colorPrimaryDark">@color/castbridge_primary</item>
+        <item name="colorAccent">@color/castbridge_primary</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/castbridge_background</item>
+        <item name="android:navigationBarColor">@color/castbridge_background</item>
+    </style>
+</resources>

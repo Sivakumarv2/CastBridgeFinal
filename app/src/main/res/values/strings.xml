@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CastBridge</string>
+    <string name="app_id">CC1AD845</string>
+    <string name="cast_button_description">Cast to TV</string>
+    <string name="direct_url_hint">Paste a direct video/audio URL</string>
+</resources>

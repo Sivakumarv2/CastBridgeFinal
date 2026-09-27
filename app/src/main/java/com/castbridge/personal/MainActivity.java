@@ -18,7 +18,6 @@ import com.google.android.gms.cast.framework.CastContext;
 import com.google.android.gms.cast.framework.CastSession;
 import com.google.android.gms.cast.framework.SessionManager;
 import com.google.android.gms.cast.framework.SessionManagerListener;
-import com.google.android.gms.cast.framework.SessionState;
 
 public class MainActivity extends AppCompatActivity {
     private CastContext castContext;

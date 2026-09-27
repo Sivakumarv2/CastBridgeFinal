@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 
 import com.google.android.gms.cast.framework.CastButtonFactory;
-import com.google.android.gms.cast.framework.ExpandedControllerActivity;
+import com.google.android.gms.cast.framework.media.widget.ExpandedControllerActivity;
 
 public class ExpandedControlsActivity extends ExpandedControllerActivity {
     @Override

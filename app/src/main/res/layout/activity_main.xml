@@ -33,24 +33,32 @@
             android:layout_width="72dp"
             android:layout_height="56dp"
             android:layout_gravity="end"
-            android:contentDescription="@string/cast_button_description"
-            android:mediaRouteTypes="user"
-            android:visibility="visible" />
+            android:contentDescription="Cast to TV"
+            android:mediaRouteTypes="user" />
+
+        <Button
+            android:id="@+id/browserButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="18dp"
+            android:text="🌐  Open Web Browser"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Use the Cast button above to select your Chromecast. Your phone can then be used normally while the TV plays."
+            android:layout_marginTop="10dp"
+            android:text="Browse a website inside CastBridge. Use the Cast button to connect your TV, then use Cast Video when a page exposes a direct HTML5 video URL."
             android:textColor="@color/castbridge_text"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/urlInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:hint="@string/direct_url_hint"
+            android:layout_marginTop="24dp"
+            android:hint="Paste a direct video/audio URL"
             android:inputType="textUri"
             android:minHeight="56dp"
             android:padding="12dp" />
@@ -59,8 +67,8 @@
             android:id="@+id/playButton"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="12dp"
-            android:text="Play on TV"
+            android:layout_marginTop="10dp"
+            android:text="Play direct URL on TV"
             android:textAllCaps="false" />
 
         <Button
@@ -74,10 +82,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Supported use\n• Chromecast-enabled apps can continue to use their own Cast button.\n• CastBridge can send compatible direct media URLs to the Default Media Receiver.\n• DRM-protected streams and apps that do not expose Cast cannot be bypassed.\n• Screen mirroring is not used by this app."
+            android:layout_marginTop="24dp"
+            android:text="Important: Chromecast-enabled apps can continue to use their own Cast button. DRM-protected streams and services that do not expose a castable/direct media stream cannot be bypassed. Screen mirroring is not used."
             android:textColor="@color/castbridge_text"
             android:textSize="14sp" />
-
     </LinearLayout>
 </ScrollView>

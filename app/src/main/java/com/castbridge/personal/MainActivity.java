@@ -16,7 +16,6 @@ import com.google.android.gms.cast.MediaLoadRequestData;
 import com.google.android.gms.cast.framework.CastButtonFactory;
 import com.google.android.gms.cast.framework.CastContext;
 import com.google.android.gms.cast.framework.CastSession;
-import com.google.android.gms.cast.framework.SessionManager;
 import com.google.android.gms.cast.framework.SessionManagerListener;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,12 +46,14 @@ public class MainActivity extends AppCompatActivity {
         MediaRouteButton castButton = findViewById(R.id.castButton);
         Button playButton = findViewById(R.id.playButton);
         Button stopButton = findViewById(R.id.stopButton);
+        Button browserButton = findViewById(R.id.browserButton);
 
         castContext = CastContext.getSharedInstance(this);
         CastButtonFactory.setUpMediaRouteButton(getApplicationContext(), castButton);
 
         playButton.setOnClickListener(v -> playUrlOnTv());
         stopButton.setOnClickListener(v -> stopCasting());
+        browserButton.setOnClickListener(v -> startActivity(new android.content.Intent(this, BrowserActivity.class)));
     }
 
     @Override
